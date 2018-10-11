@@ -1,0 +1,15 @@
+current directory: /Users/hatakeyamariku/pictgram/vendor/bundle/ruby/2.4.0/gems/bindex-0.5.0/ext/bindex
+/Users/hatakeyamariku/.rbenv/versions/2.4.1/bin/ruby -r ./siteconf20181010-93203-1p7a2rv.rb extconf.rb
+creating Makefile
+
+current directory: /Users/hatakeyamariku/pictgram/vendor/bundle/ruby/2.4.0/gems/bindex-0.5.0/ext/bindex
+make "DESTDIR=" clean
+
+current directory: /Users/hatakeyamariku/pictgram/vendor/bundle/ruby/2.4.0/gems/bindex-0.5.0/ext/bindex
+make "DESTDIR="
+compiling cruby.c
+linking shared-object bindex/cruby.bundle
+
+current directory: /Users/hatakeyamariku/pictgram/vendor/bundle/ruby/2.4.0/gems/bindex-0.5.0/ext/bindex
+make "DESTDIR=" install
+/usr/local/bin/ginstall -c -m 0755 cruby.bundle ./.gem.20181010-93203-109gix8/bindex
