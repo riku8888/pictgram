@@ -10,11 +10,15 @@ class ApplicationController < ActionController::Base
   end
 
   def logged_in?
-    unless !current_user.nil?
-      flash[:alert] = "ログインしてください"
-      redirect_to login_path
-    end
+    !current_user.nil?
   end
+
+    def users_logged_in?
+      unless !current_user.nil?
+        flash[:danger] = "ログインしてください"
+        redirect_to login_path
+      end
+    end
 
 
 

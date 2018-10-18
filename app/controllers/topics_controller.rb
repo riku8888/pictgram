@@ -1,9 +1,11 @@
 class TopicsController < ApplicationController
 
-  before_action :logged_in?
+  before_action :users_logged_in?
 
   def index
     @topics = Topic.all.includes(:favorite_users)
+    @comments = @topic.comments(:user).all?
+    @comment = @photo.comments.build(user_id: current_user.id) if current_user
   end
 
   def new
@@ -22,12 +24,14 @@ class TopicsController < ApplicationController
   end
 
 
-    private
+private
+
+
     def topic_params
       params.require(:topic).permit(:image, :description)
     end
 
-  
+
 
 
 end

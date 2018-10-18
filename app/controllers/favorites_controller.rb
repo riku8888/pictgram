@@ -1,8 +1,9 @@
 class FavoritesController < ApplicationController
-
+before_action :users_logged_in?
   def index
     @favorite_topics = current_user.favorite_topics
   end
+
 
   def create
     favorite = Favorite.new

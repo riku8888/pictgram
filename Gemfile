@@ -61,6 +61,10 @@ group :development do
   gem 'pry-stack_explorer'
 end
 
+group :production do
+  gem 'pg'
+end
+
 group :test do
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '>= 2.15'
