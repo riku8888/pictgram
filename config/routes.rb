@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'comments/new'
   get 'topics/new'
   get 'sessions/new'
   get 'users/new'
